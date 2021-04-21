@@ -12,6 +12,16 @@ router.post('/', function(req, res, next) {
   boxer.division = req.body.division;
   boxer.residence = req.body.residence;
 
+  var option = req.body.boutoptions;
+
+  if(option == 1){
+      console.log("Bout 1");
+  }
+  if(option == 2){
+      console.log("Bout 2");
+  }
+ 
+
   //outputting boxer to console to verify that boxer was created
   console.log(boxer);
 
